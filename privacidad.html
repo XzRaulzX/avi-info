@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — AVI</title>
+<meta name="description" content="Política de privacidad de AVI: qué datos de Google usa, dónde se guardan y cómo revocar el acceso.">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --fondo:#fff; --texto:#1b1b1f; --suave:#5b5b66; --acento:#3b5bdb; --linea:#e3e3ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#15151a; --texto:#ececf1; --suave:#a3a3b1; --acento:#8ea2ff; --linea:#2a2a33; }
+  }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:8px 0 4px; }
+  h2 { margin-top:32px; font-size:1.2rem; }
+  p.meta { margin:0; color:var(--suave); }
+  a { color:var(--acento); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--linea); color:var(--suave); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← AVI</a></p>
+  <h1>Política de privacidad</h1>
+  <p class="meta">Última actualización: 19 de octubre de 2026</p>
+
+  <h2>1. Quién es el responsable</h2>
+  <p>AVI es un asistente personal desarrollado y operado por Raúl Antonio Serra a título particular. Contacto: <a href="mailto:raulantonioserra@gmail.com">raulantonioserra@gmail.com</a>.</p>
+
+  <h2>2. Qué datos de Google se utilizan</h2>
+  <p>Solo si la persona usuaria pulsa «Conectar con Google» y concede el permiso, AVI accede a su cuenta de Gmail con el ámbito <code>https://www.googleapis.com/auth/gmail.modify</code>. Con él AVI puede, y solo cuando la persona usuaria lo pide:</p>
+  <ul>
+    <li>leer el asunto, el remitente, la fecha y el contenido de mensajes;</li>
+    <li>aplicar etiquetas a mensajes;</li>
+    <li>crear borradores de respuesta y enviarlos.</li>
+  </ul>
+  <p>AVI no accede a otros productos de Google (Drive, Calendar, Contactos, etc.). Además de lo anterior, durante el inicio de sesión se conoce la dirección de correo de la cuenta elegida, que se muestra en la interfaz de AVI para indicar qué cuenta está conectada.</p>
+
+  <h2>3. Para qué se utilizan</h2>
+  <p>Únicamente para realizar la tarea que la persona usuaria pide a AVI (por ejemplo, «resume mis últimos correos» o «prepara una respuesta a este mensaje»). No se utilizan para publicidad, ni para elaborar perfiles, ni para entrenar modelos de inteligencia artificial.</p>
+
+  <h2>4. Dónde se procesan y se guardan</h2>
+  <ul>
+    <li><strong>Procesamiento en local.</strong> AVI se ejecuta en el ordenador de su propietario (el «anfitrión»). El modelo de lenguaje funciona en ese mismo equipo; el contenido de los correos no se envía a servicios de IA de terceros.</li>
+    <li><strong>Tokens de acceso.</strong> El token que concede Google se guarda cifrado en el almacén de credenciales del sistema del anfitrión (Windows Credential Manager). En el caso de las personas invitadas, además se cifra con una clave derivada de su propia sesión, de modo que el propietario del equipo no puede abrirlo.</li>
+    <li><strong>Contenido de los correos.</strong> AVI lo lee de Gmail en el momento de la petición. Si AVI lee un mensaje durante una conversación, su texto puede quedar guardado dentro del historial de esa conversación, en un archivo del equipo anfitrión. No se mantiene ninguna copia ni índice de tu buzón aparte de ese historial.</li>
+    <li><strong>Historial de conversaciones.</strong> Se guarda en el equipo anfitrión, sin salir de él, y no está cifrado con una clave propia de cada invitado: quien administra ese equipo (el propietario de AVI) podría acceder a él. En las personas invitadas, el historial se borra al revocarse su acceso. Cualquier persona usuaria puede borrar sus conversaciones desde AVI.</li>
+    <li><strong>Sin copias en servidores propios.</strong> AVI no dispone de servidores en la nube donde se almacenen datos de usuarios.</li>
+  </ul>
+
+  <h2>5. Con quién se comparten</h2>
+  <p>Con nadie. Los datos de Google no se venden, no se ceden y no se transfieren a terceros, salvo que lo exija la ley. AVI no los envía a servicios de IA ni de análisis externos. Las únicas personas que podrían tener acceso a los datos guardados en el equipo anfitrión son la propia persona titular de la cuenta y el propietario de AVI, que administra ese equipo y solo accede a ellos si es necesario para mantener el servicio o por exigencia legal.</p>
+
+  <h2>6. Conformidad con la política de datos de usuario de los servicios de API de Google</h2>
+  <p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las API de Google cumplirán la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado (<em>Limited Use</em>).</p>
+
+  <h2>7. Conservación y eliminación</h2>
+  <ul>
+    <li>El token se conserva mientras la cuenta siga conectada. Al pulsar «Desconectar» en Ajustes → Correo se elimina del equipo.</li>
+    <li>En las personas invitadas, el token deja de ser utilizable cuando caduca el pase temporal que recibieron, y sus conversaciones se borran del equipo al revocarse el acceso.</li>
+    <li>Se puede revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; el token queda inservible de inmediato.</li>
+    <li>Para solicitar el borrado de cualquier dato asociado a tu cuenta, escribe al correo de contacto.</li>
+  </ul>
+
+  <h2>8. Seguridad</h2>
+  <p>El acceso a AVI desde fuera del equipo se hace por una red privada cifrada o por enlaces temporales de un solo uso que caducan y se pueden revocar. Los tokens se guardan cifrados y las credenciales de la aplicación no salen del equipo anfitrión.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Si esta política cambia, se actualizará la fecha de arriba. Los cambios que afecten al uso de datos de Google se publicarán aquí antes de aplicarse.</p>
+
+  <footer>
+    Contacto: <a href="mailto:raulantonioserra@gmail.com">raulantonioserra@gmail.com</a> ·
+    <a href="index.html">Página principal</a>
+  </footer>
+</main>
+</body>
+</html>

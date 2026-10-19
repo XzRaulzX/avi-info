@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVI — Asistente personal</title>
+<meta name="description" content="AVI es un asistente personal de IA que se ejecuta en el ordenador de su propietario y puede ayudar a gestionar su correo de Gmail.">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --fondo:#fff; --texto:#1b1b1f; --suave:#5b5b66; --acento:#3b5bdb; --linea:#e3e3ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#15151a; --texto:#ececf1; --suave:#a3a3b1; --acento:#8ea2ff; --linea:#2a2a33; }
+  }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  img.logo { width:96px; height:96px; border-radius:20px; }
+  h1 { margin:16px 0 4px; font-size:2rem; }
+  h2 { margin-top:36px; font-size:1.25rem; }
+  p.lema { margin:0; color:var(--suave); }
+  a { color:var(--acento); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--linea); color:var(--suave); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="Logotipo de AVI" width="96" height="96">
+  <h1>AVI</h1>
+  <p class="lema">Un asistente personal de IA que vive en tu propio ordenador.</p>
+
+  <h2>Qué es AVI</h2>
+  <p>AVI es un asistente personal con voz y texto. Su propietario lo ejecuta en su propio PC: el modelo de lenguaje, la voz y la memoria funcionan en local, y el móvil u otros dispositivos autorizados actúan solo como pantalla. Las conversaciones no se envían a servicios de IA de terceros.</p>
+
+  <h2>Qué hace con Gmail</h2>
+  <p>Si el usuario lo autoriza con «Conectar con Google», AVI puede, a petición suya:</p>
+  <ul>
+    <li>listar y buscar correos recientes;</li>
+    <li>leer un mensaje concreto para resumirlo o responder a una pregunta sobre él;</li>
+    <li>aplicar etiquetas a mensajes;</li>
+    <li>preparar borradores de respuesta y enviarlos.</li>
+  </ul>
+  <p>Para ello solicita un único permiso de Google, <code>gmail.modify</code> (leer, etiquetar y gestionar borradores y envíos, sin permiso para borrar mensajes de forma permanente). La autorización se puede retirar en cualquier momento.</p>
+
+  <h2>Quién puede usarlo</h2>
+  <p>AVI no es un servicio público ni se ofrece como producto abierto. Lo usan su propietario y un grupo reducido de personas invitadas por él mediante enlaces temporales. Cada persona conecta su propia cuenta de Google y elige la cuenta en su propio dispositivo.</p>
+
+  <h2>Privacidad</h2>
+  <p>Consulta la <a href="privacidad.html">política de privacidad</a> para saber cómo se tratan los datos de Google, dónde se guardan y cómo revocar el acceso.</p>
+
+  <footer>
+    Contacto: <a href="mailto:raulantonioserra@gmail.com">raulantonioserra@gmail.com</a> ·
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+</main>
+</body>
+</html>
